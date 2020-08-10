@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+
+<body class="au-grid">
+
+    <!-- HEADER -->
+    <div class="header-wrapper">
+        <div class="header">
+            {% include header.html %}
+        </div>
+    </div>
+    
+     <!-- GUIDE MENU TOGGLE -->
+    {% include guide_navlink_1.html %}
+    
+    <!-- BREADCRUMB -->
+    <div class="breadcrumbs-guide-wrapper">
+        
+    </div>
+    
+    
+    <!-- CONTENT -->
+    <div id="sab-landing-1">
+        {{ content }}
+    </div>
+    
+    
+
+    <!-- FOOTER -->
+    <div class="footer-wrapper">
+        <div class="footer">
+            {% include footer.html %}
+        </div>
+    </div>
+    
+    
+    <!-- GUIDE NAV PANEL -->
+    {% include guide_nav_1.html %}
+
+</body>
+
+</html>

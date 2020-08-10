@@ -1,0 +1,659 @@
+/*  SAB LANDING PAGES  */
+
+.sab-header-wrapper {
+    background: #FFF4D0;
+    margin: 0 -9999px;
+    padding: 0 9999px;
+    
+    .sab-header-title {
+        margin: 0 -9999px;
+        padding: 32px 9999px; 
+        background: $yellow-secondary-lightest;
+    }
+    .sab-header-content {
+        padding: 48px 0;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+    .check-if-youre-ready {
+        background: #FFF4D0 url(../assets/sab-prepare-for-business-yellow.png) no-repeat;
+        background-size: contain;
+        background-position-x: right;
+        
+        @media (max-width: 768px) {
+            background: #FFF4D0;
+        }
+    }
+    .find-out-what-you-need {
+        background: #FFF4D0 url(../assets/sab-make-key-decisions-yellow.png) no-repeat;
+        background-size: contain;
+        background-position-x: right;
+        
+        @media (max-width: 768px) {
+            background: #FFF4D0;
+        }
+    }
+    .get-advice-and-support {
+        background: #FFF4D0 url(../assets/sab-plan-for-success-yellow.png) no-repeat;
+        background-size: contain;
+        background-position-x: right;
+        
+        @media (max-width: 768px) {
+            background: #FFF4D0;
+        }
+    }
+    .contractors-and-contracts {
+        background: #FFF4D0 url(../assets/sab-prepare-for-tax-yellow.png) no-repeat;
+        background-size: contain;
+        background-position-x: right;
+        
+        @media (max-width: 768px) {
+            background: #FFF4D0;
+        }
+    }
+    .register-your-business {
+        background: #FFF4D0 url(../assets/sab-register-your-business-yellow.png) no-repeat;
+        background-size: contain;
+        background-position-x: right;
+        
+        @media (max-width: 768px) {
+            background: #FFF4D0;
+        }
+    }
+    .establishing-your-business {
+        background: #FFF4D0 url(../assets/sab-set-up-operations-yellow.png) no-repeat;
+        background-size: contain;
+        background-position-x: right;
+        
+        @media (max-width: 768px) {
+            background: #FFF4D0;
+        }
+    }
+}
+
+.breadcrumbs-guide-wrapper {
+    min-height: 48px;
+}
+
+/* SAB BANNER */
+.guide-banner-wrapper {
+    background: $yellow-secondary-lightest;
+
+    margin: 3px -9999px;
+    padding: 0 9999px;
+
+    .guide-banner {
+        padding: 0;
+        position: relative;
+        height: 42px;
+
+        p {
+            @include font-format($font-family, $font-semibold, normal);
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.05rem;
+            padding-top: 9px;
+            color: #333333;
+        }
+
+        a {
+            @include font-format($font-family, $font-semibold, normal);
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.05rem;
+            color: #333333;
+            text-decoration: none;
+            padding: 9px 0 0 44px;
+            line-height: 40px;
+        }
+
+        .back-arrow:before {
+            content: "";
+            display: inline-block;
+            background: url(../assets/Icon-chevron-left.svg) $white no-repeat;
+            background-size: 9px 14px;
+            background-position: center;
+            height: 34px;
+            width: 34px;
+            border-radius: 50%;
+            position: absolute;
+            left: 0px;
+            top: 4px;
+            box-shadow: 0 .125rem .375rem 0 rgba(0, 0, 0, .2);
+        }
+    }
+}
+
+.breadcrumbs-guide-wrapper {
+    .container-fluid .row {
+        padding-left: 240px;
+    }
+}
+
+
+/* SAB LANDING PAGE TILES */
+.sab-landing-content {
+
+    .row {
+        display: flex;
+        align-items: stretch;
+    }
+
+    .sab-landing-tile {
+        align-self: stretch;
+        width: 50%;
+        }
+
+        .card-container {
+            height: 100%;
+            position: relative;
+            
+            .card-item:hover {
+
+                .card-title {
+                    color: $blue-primary;
+                    text-decoration: underline !important;
+                }
+                .card-text {
+                    color: $black-light;
+                }
+                .icon-link {
+                    background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat left 0px center;
+                    height: 32px;
+                    width: 32px;
+                }
+            }
+        }
+
+        .card .card-header {
+            padding: 0 0 8px 0;
+            border: none;
+
+            p {
+                @include font-format($font-family, $font-regular, normal);
+                text-transform: uppercase;
+                font-size: 12px;
+                letter-spacing: 0.05rem;
+
+                span.required {
+                    text-transform: none;
+                    display: inline-block;
+                    background: $yellow-secondary-lightest;
+                    @include font-format($font-family, $font-semibold, normal);
+                    padding: 0 10px;
+                    border-radius: 16px;
+                    margin-left: 10px;
+                }
+
+                span.optional {
+                    text-transform: none;
+                    display: inline-block;
+                    border: solid 2px $yellow-secondary-lightest;
+                    @include font-format($font-family, $font-regular, normal);
+                    padding: 0 10px;
+                    border-radius: 16px;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .legacy-topicCard .card-item .card-text {
+            margin-bottom: 64px;
+        }
+        
+        .legacy-topicCard-button-text {
+            position: absolute;
+            bottom: 24px;
+
+            .icon-link {
+                background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left 8px center;
+                height: 32px;
+                width: 32px;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+}
+
+
+/*  SAB NAVIGATION */
+
+// Toggle navigation link
+#guide_navlink_wrapper_1 {
+    .container-fluid .row {
+        position: relative;   
+    }   
+    .guide_navlink {
+        background: $yellow-secondary-lightest;   
+        height: 42px;
+        margin: 3px 0 0 -9999px;
+        padding-left: 9999px;
+        position: absolute;
+    }
+
+    .link_wrapper { 
+        cursor: pointer;
+        padding: 0;
+        
+        span {
+            background-position: center right;
+            @include font-format($font-family, $font-semibold, normal);
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.05rem;
+            color: #333333;
+            text-decoration: none;
+            padding: 4px 0 0 0;
+            line-height: 16px;
+            width: 160px;
+            display: block;
+        }
+        .btn-wrapper {
+            border: $yellow-secondary-lightest 4px solid; 
+            width: 42px;
+            height: 42px;
+            position: absolute;
+            right: -21px;
+            top: 0px;
+            border-radius: 50%;
+        }
+        btn {
+            background: url(../assets/Icon-chevron-left.svg) $white no-repeat;
+            background-size: 9px 14px;
+            background-position: center center;
+            height: 32px;
+            width: 32px;
+            border-radius: 50%;
+            display: block;
+            text-indent: -9999px;
+            border-radius: 50%;
+            width: 34px;
+            height: 34px;
+            box-shadow: 0 .125rem .375rem 0 rgba(0, 0, 0, .2);
+        }
+    }
+
+    p {
+        font-size: 0.9rem;
+        margin-bottom: 0;
+    }
+}
+
+// Guide menu side panel    
+#guide_nav_wrapper {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    top: 165px;
+    left: 0;
+    background: $white;
+    height: calc(100% - 165px);
+    box-shadow: 0 .125rem .375rem 0 rgba(0, 0, 0, .2);
+    width: 40%;
+    
+    @media (max-width: 1200px) {
+        top: 153px;
+        width: 50%;
+    }
+    @media (max-width: 900px) {
+        top: 30px;
+        width: 75%;
+    }
+
+    &.side_nav_open {
+        display: block;  
+    }
+
+    .nav_close {
+        position: absolute;
+        top: 0;
+        right: -21px;
+        cursor: pointer;
+        border: $yellow-secondary-lightest 4px solid; 
+        border-radius: 50%;
+        padding: 0;
+        
+        
+        btn {
+            background: url("../assets/Icon-cross-333333.svg") no-repeat $white;
+            background-position: center center;
+            display: block;
+            background-size: 14px 14px;
+            border-radius: 50%;
+            text-indent: -9999px;
+            width: 34px;
+            height: 34px;
+            box-shadow: 0 .125rem .375rem 0 rgba(0, 0, 0, .2);
+            z-index: 2000;
+        }
+        
+    }
+
+    #guide_nav {
+        .guide_heading-wrapper {
+            padding: 48px 0px 32px 12%;
+            background: $yellow-secondary-lightest;
+
+            h3 {
+                margin-bottom: 16px;
+                padding: 0 20% 0 0;
+                color: $black-light;
+                font-size: 24px;
+                line-height: 28px;
+            }
+            a {
+                text-decoration: underline;
+                color: $black-light;
+                
+                &:hover {
+                    text-decoration: underline;
+                    color: $black-light;
+                }
+            }
+        }
+
+        .guide_menu_wrapper {
+
+            padding: 48px 12% 0 12%;
+            
+            ul {
+                padding: 0;
+
+                li {
+                    font-weight: 400;
+                    list-style-type: none;
+                    font-size: 16px;
+                    padding: 10px 32px;
+                    background-position: center right 32px;
+                    background-size: 14px 20px;
+                    cursor: pointer;
+                    border-bottom: 1px solid $yellow-secondary-light;
+
+                    &:hover {
+                        background-position: center center;
+                        background-size: 14px 20px;
+                    }
+
+                }
+
+                ul {
+                    li {
+                        font-weight: 400;
+                        padding: 10px 24px 10px 16px;
+                        font-size: 14px;
+                        background: none; 
+                        position: relative; 
+                        
+                        a {
+                            padding-right: 100px; 
+                            display: inline-block;
+                        }
+
+                        &:hover {
+                            background: none;
+
+                            a {
+                                text-decoration: underline;
+
+                                &.current_page {
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                }
+            }
+
+            .current_page {
+                border-left: 4px solid $yellow-secondary-mid;
+                font-weight: 600;
+                padding-left: 8px;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            .sub-landing-link {
+                padding: 0;
+                
+                a {
+                    display: inline-block;
+                    padding: 10px 16px;
+                    width: 80%;
+                    color: $black-light;
+                    background: #FFF4D0;
+                    position: relative;
+   
+                    .complete {
+                        position: absolute;
+                        background: url("../assets/icon_green_tick_circle.svg") no-repeat;
+                        width: 24px;
+                        height: 24px;
+                        right: 16px;
+                        top: 10px;
+                    }
+                    
+                    &:hover {
+                        text-decoration: underline;
+                        background: #FFEAAA;
+                    }
+                }
+            }
+            .sub-menu-toggle {
+                background: url("../assets/Icon-chevron-down-333333.svg") no-repeat $yellow-secondary-lightest;
+                background-position: center center;
+                background-size: 14px 20px;
+                display: inline-block;
+                width: 20%;
+                text-indent: -9999px;
+                height: 100%;
+                padding: 10px 20px;
+                
+                &:hover {
+                    background: url("../assets/Icon-chevron-down-333333.svg") no-repeat $yellow-secondary-light;
+                    background-position: center center;
+                    background-size: 14px 20px;
+                }
+                
+                &.open {
+                    background: $yellow-secondary-lightest url("../assets/Icon-chevron-up-333333.svg") no-repeat;
+                    background-position: center center;
+                    background-size: 14px 20px;
+                }
+            }
+
+            .sub-menu {
+                display: none;
+                background: $white;
+                padding: 0 0 0 0;
+
+                a {
+                    color: $black-light;
+                }
+                
+                span.required, span.optional {
+                    text-transform: none;
+                    display: inline-block;
+                    padding: 0 10px;
+                    border: solid 2px $yellow-secondary-lightest;
+                    border-radius: 16px;
+                    margin-left: 10px;
+                    font-size: 12px;
+                    float: right;
+                    position: absolute;
+                    right: 0;
+                    width: 20%;
+                    text-align: center;
+                }
+                span.required {
+                    background: $yellow-secondary-lightest;
+                    @include font-format($font-family, $font-semibold, normal);
+                    top: calc(50% - 11px);
+                }
+                span.optional {
+                    border: solid 2px $yellow-secondary-lightest;
+                    @include font-format($font-family, $font-regular, normal);
+                    top: calc(50% - 11px);
+                }
+
+                &.open {
+                    display: block;
+                }
+                
+                span.complete {
+                    position: absolute;
+                    width: 16px;
+                    height: 12px;
+                    background: url("../assets/icon_green_tick.svg") no-repeat;
+                    right: calc(20% + 20px);
+                    top: calc(50% - 8px);
+                }
+            }
+
+        }
+        .switch_guides {
+            margin-top: 48px;
+            
+            a {
+                color: $black-light;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+
+/*  SAB READ MORE TILE - OLD */
+#sab-read-more {
+    .action-card-button {
+        background-color: $teal-light;
+    }
+}
+
+
+
+/* MODERATOR MENU */
+header {
+    position: relative;
+}
+#moderator-menu {
+    
+    .clear-complete {
+        color: $white;
+        display: inline-block;
+        margin-bottom: 40px;
+        cursor:pointer;
+        padding: 10px 20px;
+        border: $white solid 1px;
+        border-radius: 10px;
+    }
+    .moderator-toggle {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        
+        p {
+            font-size: 14px;
+            color: $blue-primary-mid;
+        }   
+    }
+    .moderator-menu {
+        display: none;
+        position: absolute;
+        width: 400px;
+        background: #18335C;
+        top:0;
+        right:0;
+        z-index: 5000;
+        padding: 20px 20px 20px 40px;
+        box-shadow: 0  .125rem .375rem 0 rgba(0,0,0,.1);
+        box-shadow: 0 50vh 0 0 #18335C;
+        
+        p {
+            text-align: right;
+            color: $white;
+            width: 100%;
+            display: block;
+            position: relative;
+            padding-right: 25px;
+            
+            &:after {
+                content: "";
+                display: inline-block;
+                background-image: url(../assets/Icon-cross-FFFFFF.svg);
+                background-size: 15px 15px;
+                height: 15px;
+                width: 15px;
+                position: absolute;
+                right: 0;
+                top: 4px;   
+            }
+        }
+        
+        ul {
+            text-indent: 0;
+            margin:0;
+            padding: 0;
+            
+            li {
+                text-indent: 0;
+                list-style-type: none;
+                color: $white;
+                
+                a {
+                    font-size: 12px;
+                    color: $white;
+                }
+            }
+        }
+    }  
+}
+
+
+
+/* MODAL */
+.modal-wrapper {
+    display: none;
+}
+.modal-wrapper.active {
+    display: block;
+    position: fixed;
+    width: 500px;
+    padding: 64px 32px 32px 32px;
+    top: 30%;
+    left: calc(50% - 250px);
+    background: $white;
+    z-index: 7000;
+    box-shadow: 0 .125rem .375rem 0 rgba(0, 0, 0, .5); 
+    border-top: solid $blue-primary-mid 4px;
+    
+    .modal-close {
+        text-indent: -9999px;
+        height: 24px;
+        width: 24px;
+        background: url(../assets/Icon-cross-blue.svg) no-repeat;
+        position: absolute;
+        right: 32px;
+        top: 32px;
+        cursor: pointer;
+    }
+}
+.modal-background {
+    display: none;
+}
+.modal-background.active {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(51, 51, 51, .5);
+    position: fixed;
+    z-index: 6999;
+}
