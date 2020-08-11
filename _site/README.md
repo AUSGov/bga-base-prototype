@@ -1,3 +1,4 @@
 # BGA Guide navigation
 
-[Prototype](https://ausgov.github.io/sab_2/index.html)
+[Base Business.gov.au Prototype](https://ausgov.github.io/bga-base-prototype/index.html)
+    
