@@ -1,3 +1,15 @@
+/* ANCHOR MENU */
+.anchor-menu .sticky-container ul li .active-sticky {
+    font-weight: 600 !important;
+    color: #254f90;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    padding-left: 16px;
+    border: none;
+    border-left: #b3c2d8 solid 4px;
+}
+
 /* MODAL */
 .modal-wrapper {
     display: none;

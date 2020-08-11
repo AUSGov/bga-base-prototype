@@ -2,12 +2,9 @@
 
 $(document).ready(function () {
     
-    // Reset disabled links in MAIN NAVIGATION so they take the user to the required url (disabled so dropdown opens on hover rather than click)
-    // NOTE: hover on dropdown is performed with CSS NOT javascript
-    $('.dropdown-submenu').on('click', function(){
-        $(this).children('a').css('text-decoration', 'underline');
-        var href = $(this).children('a').attr('href');
-        window.location = href;
+    // Main navigation functionality
+    $('.navbar-nav .nav-item.dropdown').on('click', function(){
+        $(this).find('.navigation-first-level-menu').toggleClass('show');
     });
     
     
@@ -28,26 +25,7 @@ $(document).ready(function () {
     
     
     // Header navigation links   
-    $('#header-registrations-link').on('click',function(){
-        window.location.pathname = "/sab_2/pages-topic/Registrations.html";
-    });
-    $('#header-business-link').on('click',function(){
-        window.location.pathname = "/sab_2/pages-topic/Business-Information.html";
-    });
-    $('#header-grants-link').on('click',function(){
-        window.location.pathname = "/sab_2/pages-topic/Grants-programs.html";
-    });
-    $('#header-advice-link').on('click',function(){
-        window.location.pathname = "/sab_2/pages-topic/Expertise-advice.html";
-    });
-    $('#header-events-link').on('click',function(){
-        window.location.pathname = "/sab_2/pages-topic/Events-training.html";
-    });
-    $('#header-news-link').on('click',function(){
-        window.location.pathname = "/sab_2/pages-content/News.html";
-    });    
 
-    
     
     /*----------- Add side-menu (sticky_list) functionality ----------- */
     
@@ -64,7 +42,7 @@ $(document).ready(function () {
     function add_position(positions) {
 
         for (var i = 0; i < positions.length; i++) {
-            var top_position = positions[i] - 40;
+            var top_position = positions[i];
             if ($(window).scrollTop() >= top_position) {
                 $('.anchor-menu a').removeClass('active-sticky');
                 $('.anchor-menu a[data-value=' + positions[i] + ']').addClass('active-sticky');
@@ -85,7 +63,7 @@ $(document).ready(function () {
             $('.anchor-menu').css('position', 'relative').css('top', 'auto');
         } else if (win.width() >= 575) {
             if (win.scrollTop() >= stickyPosition.top) {
-                $('.anchor-menu').css('position', 'fixed').css('top', '0').css('width', stickyWidth);
+                $('.anchor-menu').css('position', 'fixed').css('top', '32px').css('width', stickyWidth);
             } else {
                 $('.anchor-menu').css('position', 'relative').css('top', 'auto').css('width', stickyWidth);
             }
@@ -100,7 +78,7 @@ $(document).ready(function () {
                 $('.anchor-menu').css('position', 'relative').css('top', 'auto').css('width', stickyWidth);
             } else if (win.width() >= 575) {
                 if (win.scrollTop() >= stickyPosition.top) {
-                    $('.anchor-menu').css('position', 'fixed').css('top', '0').css('width', stickyWidth);
+                    $('.anchor-menu').css('position', 'fixed').css('top', '32px').css('width', stickyWidth);
                 } else if (win.scrollTop() < stickyPosition.top) {
                     $('.anchor-menu').css('position', 'relative').css('top', 'auto').css('width', stickyWidth);
                 }
@@ -201,16 +179,6 @@ $(document).ready(function () {
         $(".modal-wrapper").removeClass("active");
         $(".modal-background").removeClass("active");
     });
-    
-    // Accordion not working modal
-    /*$(".accordion-group-toggle").on("click", function(){
-        $(".modal-wrapper").addClass("active");
-        $(".modal-background").addClass("active");
-    });
-    $(".accordion-item").on("click", function(){
-        $(".modal-wrapper").addClass("active");
-        $(".modal-background").addClass("active");
-    });*/
     
     // Search not working modal
      $(".btn-search").on("click", function(){

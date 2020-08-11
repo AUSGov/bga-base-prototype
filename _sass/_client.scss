@@ -414,7 +414,7 @@ hr {
     padding-bottom: .25em;
     padding-right: .25em;
     display: inline-block;
-    content: url("Content/Assets/externalLink.svg");
+    content: url("../assets/externalLink.svg");
     height: 20px;
     width: 20px;
 }
@@ -508,7 +508,7 @@ hr {
     padding: 10px 40px 10px 10px;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background-image: url("Content/Assets/arrow-down.svg");
+    background-image: url("../assets/arrow-down.svg");
     background-repeat: no-repeat;
     background-position-x: 98%;
     background-position-y: center;
@@ -803,7 +803,7 @@ a.chat-now {
 
 a.chat-now:before {
     display: inline-block;
-    content: url("Content/Assets/chatopen.svg");
+    content: url("../assets/chatopen.svg");
     padding: 0 0 0 3px;
     height: 28px;
     width: 28px;
@@ -835,7 +835,7 @@ div.chat-later {
 
 div.chat-later:before {
     display: inline-block;
-    content: url("Content/Assets/chatclosed.svg");
+    content: url("../assets/chatclosed.svg");
     padding: 0 0 0 3px;
     width: 28px;
     height: 28px;
@@ -1585,7 +1585,7 @@ div.chat-later a {
     padding-bottom: .25em;
     padding-right: .25em;
     display: inline-block;
-    content: url("Content/Assets/externalLink.svg");
+    content: url("../assets/externalLink.svg");
     height: 20px;
     width: 20px;
 }
@@ -1640,14 +1640,14 @@ div.chat-later a {
 }
 
 .body-copy .body-copy-list-dot li:before,.body-copy ul li:before {
-    content: url("Content/Assets/dot.svg");
+    content: url("../assets/dot.svg");
     height: 100%;
     width: 1rem;
     vertical-align: middle;
 }
 
 .body-copy .body-copy-list-tick li:before {
-    content: url("Content/Assets/tick.svg");
+    content: url("../assets/tick.svg");
     line-height: 2rem;
     height: 100%;
     width: 1rem;
@@ -1825,7 +1825,7 @@ div.chat-later a {
     padding-bottom: .25em;
     padding-right: .25em;
     display: inline-block;
-    content: url("Content/Assets/externalLink.svg");
+    content: url("../assets/externalLink.svg");
     height: 20px;
     width: 20px;
 }
@@ -1914,7 +1914,7 @@ div.chat-later a {
 
 .cta .cta-content ul li:before {
     left: 0;
-    content: url("Content/Assets/tick.svg");
+    content: url("../assets/tick.svg");
     position: relative;
     display: inline-block;
     width: 1rem;
@@ -2083,7 +2083,7 @@ div.chat-later a {
     padding-bottom: .25em;
     padding-right: .25em;
     display: inline-block;
-    content: url("Content/Assets/externalLink.svg");
+    content: url("../assets/externalLink.svg");
     height: 20px;
     width: 20px;
 }
@@ -2149,14 +2149,14 @@ div.chat-later a {
 }
 
 .standardcta .standardcta-content .standardcta-content-inner .list-dot li:before,.standardcta .standardcta-content .standardcta-content-inner ul li:before {
-    content: url("Content/Assets/dot.svg");
+    content: url("../assets/dot.svg");
     height: 100%;
     width: 1rem;
     vertical-align: middle;
 }
 
 .standardcta .standardcta-content .standardcta-content-inner .list-tick li:before {
-    content: url("Content/Assets/tick.svg");
+    content: url("../assets/tick.svg");
     line-height: 2rem;
     height: 100%;
     width: 1rem;
@@ -2230,14 +2230,14 @@ div.chat-later a {
 }
 
 .standardcta .standardcta-content .standardcta-content-inner .body-copy-list-dot li:before,.standardcta .standardcta-content .standardcta-content-inner ul li:before {
-    content: url("Content/Assets/dot.svg");
+    content: url("../assets/dot.svg");
     height: 100%;
     width: 1rem;
     vertical-align: middle;
 }
 
 .standardcta .standardcta-content .standardcta-content-inner .body-copy-list-tick li:before {
-    content: url("Content/Assets/tick.svg");
+    content: url("../assets/tick.svg");
     line-height: 2rem;
     height: 100%;
     width: 1rem;
@@ -5412,14 +5412,14 @@ div.chat-later a {
 }
 
 .image-pathway-list .image-pathway-list-block .image-pathway-list-wrapper .image-pathway-list-body .image-pathway-list-description .list-dot li:before,.image-pathway-list .image-pathway-list-block .image-pathway-list-wrapper .image-pathway-list-body .image-pathway-list-description ul li:before {
-    content: url("Content/Assets/dot.svg");
+    content: url("../assets/dot.svg");
     height: 100%;
     width: 1rem;
     vertical-align: middle;
 }
 
 .image-pathway-list .image-pathway-list-block .image-pathway-list-wrapper .image-pathway-list-body .image-pathway-list-description .list-tick li:before {
-    content: url("Content/Assets/tick.svg");
+    content: url("../assets/tick.svg");
     line-height: 2rem;
     height: 100%;
     width: 1rem;
@@ -5493,14 +5493,14 @@ div.chat-later a {
 }
 
 .image-pathway-list .image-pathway-list-block .image-pathway-list-wrapper .image-pathway-list-body .image-pathway-list-description .body-copy-list-dot li:before,.image-pathway-list .image-pathway-list-block .image-pathway-list-wrapper .image-pathway-list-body .image-pathway-list-description ul li:before {
-    content: url("Content/Assets/dot.svg");
+    content: url("../assets/dot.svg");
     height: 100%;
     width: 1rem;
     vertical-align: middle;
 }
 
 .image-pathway-list .image-pathway-list-block .image-pathway-list-wrapper .image-pathway-list-body .image-pathway-list-description .body-copy-list-tick li:before {
-    content: url("Content/Assets/tick.svg");
+    content: url("../assets/tick.svg");
     line-height: 2rem;
     height: 100%;
     width: 1rem;
@@ -5869,7 +5869,7 @@ div.chat-later a {
     padding-bottom: .25em;
     padding-right: .25em;
     display: inline-block;
-    content: url("Content/Assets/externalLink.svg");
+    content: url("../assets/externalLink.svg");
     height: 20px;
     width: 20px;
 }
@@ -5939,7 +5939,7 @@ div.chat-later a {
     }
 
     .generic-table tr td:first-of-type {
-        background: #fff url("Content/Assets/arrow-down.svg") no-repeat;
+        background: #fff url("../assets/arrow-down.svg") no-repeat;
         background-position: right 16px center;
         font-weight: 600;
         padding-left: 16px !important;
@@ -5953,7 +5953,7 @@ div.chat-later a {
     }
 
     .generic-table .groupParent td:first-of-type {
-        background: #ebebeb url("Content/Assets/arrow-up.svg") no-repeat;
+        background: #ebebeb url("../assets/arrow-up.svg") no-repeat;
         background-position: right 16px center;
     }
 
@@ -6129,14 +6129,14 @@ label {
 }
 
 .call-out .call-out-list-dot li:before,.call-out ul li:before {
-    content: url("Content/Assets/dot.svg");
+    content: url("../assets/dot.svg");
     height: 100%;
     width: 1rem;
     vertical-align: middle;
 }
 
 .call-out .call-out-list-tick li:before {
-    content: url("Content/Assets/tick.svg");
+    content: url("../assets/tick.svg");
     line-height: 2rem;
     height: 100%;
     width: 1rem;
@@ -6239,7 +6239,7 @@ label {
     padding-bottom: .25em;
     padding-right: .25em;
     display: inline-block;
-    content: url("Content/Assets/externalLink.svg");
+    content: url("../assets/externalLink.svg");
     height: 20px;
     width: 20px;
 }
@@ -6381,7 +6381,7 @@ label {
     padding-bottom: .25em;
     padding-right: .25em;
     display: inline-block;
-    content: url("Content/Assets/externalLink.svg");
+    content: url("../assets/externalLink.svg");
     height: 20px;
     width: 20px;
 }
@@ -6502,7 +6502,7 @@ label {
     padding-bottom: .25em;
     padding-right: .25em;
     display: inline-block;
-    content: url("Content/Assets/externalLink.svg");
+    content: url("../assets/externalLink.svg");
     height: 20px;
     width: 20px;
 }
@@ -6669,14 +6669,14 @@ label {
 }
 
 .contact-card .contact-card-content .contact-line-content-description .body-copy-list-dot li:before,.contact-card .contact-card-content .contact-line-content-description ul li:before {
-    content: url("Content/Assets/dot.svg");
+    content: url("../assets/dot.svg");
     height: 100%;
     width: 1rem;
     vertical-align: middle;
 }
 
 .contact-card .contact-card-content .contact-line-content-description .body-copy-list-tick li:before {
-    content: url("Content/Assets/tick.svg");
+    content: url("../assets/tick.svg");
     line-height: 2rem;
     height: 100%;
     width: 1rem;
@@ -6835,7 +6835,7 @@ label {
     padding-bottom: .25em;
     padding-right: .25em;
     display: inline-block;
-    content: url("Content/Assets/externalLink.svg");
+    content: url("../assets/externalLink.svg");
     height: 20px;
     width: 20px;
 }
@@ -7121,7 +7121,7 @@ label {
     padding-bottom: .25em;
     padding-right: .25em;
     display: inline-block;
-    content: url("Content/Assets/externalLink.svg");
+    content: url("../assets/externalLink.svg");
     height: 20px;
     width: 20px;
 }
@@ -7244,14 +7244,14 @@ label {
 }
 
 .accordion-item .accordion-item-content .accordion-item-content-inner .list-dot li:before,.accordion-item .accordion-item-content .accordion-item-content-inner ul li:before {
-    content: url("Content/Assets/dot.svg");
+    content: url("../assets/dot.svg");
     height: 100%;
     width: 1rem;
     vertical-align: middle;
 }
 
 .accordion-item .accordion-item-content .accordion-item-content-inner .list-tick li:before {
-    content: url("Content/Assets/tick.svg");
+    content: url("../assets/tick.svg");
     line-height: 2rem;
     height: 100%;
     width: 1rem;
@@ -7325,14 +7325,14 @@ label {
 }
 
 .accordion-item .accordion-item-content .accordion-item-content-inner .body-copy-list-dot li:before,.accordion-item .accordion-item-content .accordion-item-content-inner ul li:before {
-    content: url("Content/Assets/dot.svg");
+    content: url("../assets/dot.svg");
     height: 100%;
     width: 1rem;
     vertical-align: middle;
 }
 
 .accordion-item .accordion-item-content .accordion-item-content-inner .body-copy-list-tick li:before {
-    content: url("Content/Assets/tick.svg");
+    content: url("../assets/tick.svg");
     line-height: 2rem;
     height: 100%;
     width: 1rem;
@@ -7540,14 +7540,14 @@ label {
 }
 
 .grant-information .body-copy-content .list-dot li:before,.grant-information .body-copy-content ul li:before {
-    content: url("Content/Assets/dot.svg");
+    content: url("../assets/dot.svg");
     height: 100%;
     width: 1rem;
     vertical-align: middle;
 }
 
 .grant-information .body-copy-content .list-tick li:before {
-    content: url("Content/Assets/tick.svg");
+    content: url("../assets/tick.svg");
     line-height: 2rem;
     height: 100%;
     width: 1rem;
@@ -7621,14 +7621,14 @@ label {
 }
 
 .grant-information .body-copy-content .body-copy-list-dot li:before,.grant-information .body-copy-content ul li:before {
-    content: url("Content/Assets/dot.svg");
+    content: url("../assets/dot.svg");
     height: 100%;
     width: 1rem;
     vertical-align: middle;
 }
 
 .grant-information .body-copy-content .body-copy-list-tick li:before {
-    content: url("Content/Assets/tick.svg");
+    content: url("../assets/tick.svg");
     line-height: 2rem;
     height: 100%;
     width: 1rem;
@@ -7720,7 +7720,7 @@ label {
     padding-bottom: .25em;
     padding-right: .25em;
     display: inline-block;
-    content: url("Content/Assets/externalLink.svg");
+    content: url("../assets/externalLink.svg");
     height: 20px;
     width: 20px;
 }
@@ -7808,14 +7808,14 @@ label {
 }
 
 .status-indicator .status-indicator-content .list-dot li:before,.status-indicator .status-indicator-content ul li:before {
-    content: url("Content/Assets/dot.svg");
+    content: url("../assets/dot.svg");
     height: 100%;
     width: 1rem;
     vertical-align: middle;
 }
 
 .status-indicator .status-indicator-content .list-tick li:before {
-    content: url("Content/Assets/tick.svg");
+    content: url("../assets/tick.svg");
     line-height: 2rem;
     height: 100%;
     width: 1rem;
@@ -7889,14 +7889,14 @@ label {
 }
 
 .status-indicator .status-indicator-content .body-copy-list-dot li:before,.status-indicator .status-indicator-content ul li:before {
-    content: url("Content/Assets/dot.svg");
+    content: url("../assets/dot.svg");
     height: 100%;
     width: 1rem;
     vertical-align: middle;
 }
 
 .status-indicator .status-indicator-content .body-copy-list-tick li:before {
-    content: url("Content/Assets/tick.svg");
+    content: url("../assets/tick.svg");
     line-height: 2rem;
     height: 100%;
     width: 1rem;
@@ -7988,7 +7988,7 @@ label {
     padding-bottom: .25em;
     padding-right: .25em;
     display: inline-block;
-    content: url("Content/Assets/externalLink.svg");
+    content: url("../assets/externalLink.svg");
     height: 20px;
     width: 20px;
 }
@@ -8635,7 +8635,7 @@ label {
 .question-wrapper.error .qa-dropdown select {
     color: #7983aa;
     border-bottom: solid #d2201e 2px;
-    background: url("Content/Assets/arrow-down.svg") no-repeat right;
+    background: url("../assets/arrow-down.svg") no-repeat right;
 }
 
 .question-wrapper.error .qa-dropdown select .select-option {
@@ -8825,7 +8825,7 @@ label {
     background-color: transparent;
     position: relative;
     z-index: 99;
-    background: url("Content/Assets/arrow-down-white.svg") no-repeat right;
+    background: url("../assets/arrow-down-white.svg") no-repeat right;
     color: #fff;
     -webkit-appearance: none;
     -webkit-border-radius: 0;
@@ -9025,7 +9025,7 @@ label {
 .support-pathway-sort-order .sort-order-select select {
     color: #333;
     border-bottom: solid #4569a0 4px !important;
-    background: url("Content/Assets/down_blue.svg") no-repeat right;
+    background: url("../assets/down_blue.svg") no-repeat right;
     font-weight: normal !important;
 }
 
@@ -9562,14 +9562,14 @@ label {
 }
 
 .search-card-wrapper .no-results .list-dot li:before,.search-card-wrapper .no-results ul li:before {
-    content: url("Content/Assets/dot.svg");
+    content: url("../assets/dot.svg");
     height: 100%;
     width: 1rem;
     vertical-align: middle;
 }
 
 .search-card-wrapper .no-results .list-tick li:before {
-    content: url("Content/Assets/tick.svg");
+    content: url("../assets/tick.svg");
     line-height: 2rem;
     height: 100%;
     width: 1rem;
@@ -9659,7 +9659,7 @@ label {
     padding-bottom: .25em;
     padding-right: .25em;
     display: inline-block;
-    content: url("Content/Assets/externalLink.svg");
+    content: url("../assets/externalLink.svg");
     height: 20px;
     width: 20px;
 }

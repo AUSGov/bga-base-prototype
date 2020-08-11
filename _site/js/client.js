@@ -10232,6 +10232,7 @@ $(function() {
         "padding-top": "0px"
     })
 });
+
 $(function() {
     if ($(".anchor-menu").length > 0) {
         var n = 32
@@ -10306,6 +10307,8 @@ $(function() {
         })
     }
 });
+
+//Accordion
 $(function() {
     $(document).ready(function() {
         $(".accordion-item-content").hide()
