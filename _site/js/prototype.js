@@ -115,11 +115,8 @@ $(document).ready(function () {
                 element_id = '#' + sticky_list_2[a_text],
                 element_position = $(element_id).offset();
             
-            //console.log(element_id);
             
             if ($(element_id).length){
-                //console.log(element_id);
-                //console.log(element_position);
                 $(this).attr('data-value', Math.round(element_position.top));
         
                 $(this).on('click', function(){
@@ -184,6 +181,29 @@ $(document).ready(function () {
      $(".btn-search").on("click", function(){
         $(".modal-wrapper").addClass("active");
         $(".modal-background").addClass("active");
+    });
+    
+    
+    
+    // EXPORT TOOL TABS & NAV TILES FUNCTIONALITY
+    $('.nav-link').on('click', function(e){
+        e.preventDefault();
+        $('.tab-section').hide(); 
+        
+        var active_section = '#' + $(this).attr('href');
+        $(active_section).show();
+    });
+    
+    $('.export-nav-tile').on('click', function(){
+        $('.tab-section').hide(); 
+        var active_section = $(this).attr('data-attribute');
+        $('#' + active_section).show();
+        
+        $('.nav-link.active').removeClass('active');
+        $('.nav-link[href='+ active_section + ']').addClass('active');
+        
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
     });
     
     

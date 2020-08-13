@@ -66,6 +66,9 @@
         font-style: normal;
         border-bottom: none !important;
     }
+    .hs-code {
+        padding-bottom: 16px;
+    }
     
     
     // EXPORT ACCORDION
@@ -87,13 +90,13 @@
         margin-right: 16px;
         line-height: 1.8rem;
     }
-    
+
     // EXPORT TABS
     .nav-tabs {
         display: flex;
         flex-wrap: wrap;
         padding: 0;
-        margin: 0 0 24px 0;
+        margin: 16px 0 24px 0;
         list-style: none;
         border-bottom-width: 0px;
 
@@ -126,8 +129,38 @@
         }
     }
     
+    // BLUE NOTIFICATION
+    .notification-wrapper {
+        padding: 24px;
+        background: #EFF4FB;
+        border-top: 4px solid #B3C2D8;
+        margin-bottom: 32px;
+        position: relative;
+        
+        .notification-icon {
+            background: url(../assets/Icon-alert-information.svg) no-repeat;
+            
+            height: 40px;
+            min-width: 40px;
+            width: 40px;
+            position:absolute;
+        }
+        .notification-content {
+            padding: 0 16px 0 54px;
+            font-size: 1rem;
+            letter-spacing: .0125rem;
+            line-height: 1.78;
+            text-align: left;
+            
+            p {
+                color: $blue-primary;
+                padding-bottom: 16px;
+            }
+        }
+    }
+    
     // Hide tab content
-    #overview-section {
+    #importing-requirements-section, #tariff-section {
         display: none;
     }
     
