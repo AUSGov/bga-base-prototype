@@ -1,11 +1,42 @@
 /*jshint browser: true, devel: true, jquery: true*/
 
+// Active pathway tiles
+function changePage(page){
+    window.location.pathname = page;
+}
+
 $(document).ready(function () {
     
     // Main navigation functionality
     $('.navbar-nav .nav-item.dropdown').on('click', function(){
         $(this).find('.navigation-first-level-menu').toggleClass('show');
     });
+    
+    
+    // Main nav - top level links
+    $('#navbarDropdownMenuLink_0').on('click', function(e){
+        e.preventDefault();
+    });
+    $('#navbarDropdownMenuLink_1').on('click', function(e){
+        e.preventDefault();
+    });
+    $('#navbarDropdownMenuLink_2').on('click', function(e){
+        e.preventDefault();
+        window.location.pathname = "/bga-base-prototype/Grants-and-programs.html";
+    });
+    $('#navbarDropdownMenuLink_3').on('click', function(e){
+        e.preventDefault();
+        window.location.pathname = "/bga-base-prototype/Expertise-and-advice.html";
+    });
+    $('#navbarDropdownMenuLink_4').on('click', function(e){
+        e.preventDefault();
+        window.location.pathname = "/bga-base-prototype/Events-and-training.html";
+    });
+    $('#navbarDropdownMenuLink_5').on('click', function(e){
+        e.preventDefault();
+        window.location.pathname = "/bga-base-prototype/News.html";
+    }); 
+
     
     
     // Prevent click empty 'a' tag from causing scrolling
@@ -24,14 +55,6 @@ $(document).ready(function () {
     });
     
 
-    //Main navigation
-    $('#navbarDropdownMenuLink_0').on('click', function(e){
-        e.preventDefault();
-    });
-    $('#navbarDropdownMenuLink_1').on('click', function(e){
-        e.preventDefault();
-    })
-    
     /*----------- Add side-menu (sticky_list) functionality ----------- */
     
     function create_id(text){
