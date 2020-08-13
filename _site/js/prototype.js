@@ -23,9 +23,14 @@ $(document).ready(function () {
         }
     });
     
-    
-    // Header navigation links   
 
+    //Main navigation
+    $('#navbarDropdownMenuLink_0').on('click', function(e){
+        e.preventDefault();
+    });
+    $('#navbarDropdownMenuLink_1').on('click', function(e){
+        e.preventDefault();
+    })
     
     /*----------- Add side-menu (sticky_list) functionality ----------- */
     
@@ -150,7 +155,6 @@ $(document).ready(function () {
         }
     });
     
-
     
    
     // Modal functionality

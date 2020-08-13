@@ -3236,11 +3236,15 @@ label { display: block; padding: 5px 0; font-weight: bold; }
 
 #exporttool .back-to-bga-header { background: #18335C; padding: 16px; }
 
+#exporttool .back-to-bga-header p { color: #ffffff; margin: 0; padding: 0; }
+
 #exporttool .back-to-bga-header .back-to-bga { color: #ffffff; display: relative; padding-left: 18px; }
 
 #exporttool .back-to-bga-header .back-to-bga span { background: url("../assets/Icon-chevron-left-white.svg") no-repeat; height: 20px; width: 10px; background-position: left 4px; display: block; position: absolute; }
 
 #exporttool .beta-badge { background-color: #fff; width: 80px; height: 40px; color: #254F90; margin-top: 12px; border-radius: 25px; font-size: .9375rem; font-weight: 700; padding: 8px 20px 8px 20px; }
+
+#exporttool .breadcrumb-location.inactive { font-weight: 400; }
 
 #exporttool p { font-size: 16px; }
 
@@ -3255,6 +3259,10 @@ label { display: block; padding: 5px 0; font-weight: bold; }
 #exporttool .inline-pathway-link { text-transform: uppercase; text-decoration: none; box-shadow: none; color: #333; font-size: 12px; line-height: 24px; font-family: "Open Sans",sans-serif; font-weight: 400; font-style: normal; border-bottom: none !important; }
 
 #exporttool .hs-code { padding-bottom: 16px; }
+
+#exporttool .theme-button-primary { background: #4569A0 0% 0% no-repeat padding-box; border: 2px solid #254F90; color: #fff; font-family: "Open Sans",sans-serif; font-weight: 600; font-style: normal; height: 48px !important; padding: 16px 32px; display: inline-block; }
+
+#exporttool .standardcta h2 { padding-top: 0 !important; }
 
 #exporttool .required-tag { font-weight: 600; font-size: 16px; letter-spacing: 0px; color: white; width: 54px; display: inline-block; margin-top: 3px; line-height: 22px; background: #4569A0; float: left; height: 30px; border-radius: 15px; opacity: 1; text-align: center; margin-right: 16px; line-height: 1.8rem; }
 

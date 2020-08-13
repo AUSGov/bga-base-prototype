@@ -10234,7 +10234,7 @@ $(function() {
 });
 
 $(function() {
-    if ($(".anchor-menu").length > 0) {
+    /*if ($(".anchor-menu").length > 0) {
         var n = 32
           , u = $(".anchor-menu").offset()
           , t = $(".anchor-menu").height()
@@ -10305,7 +10305,7 @@ $(function() {
             $(".sticky-container").length && (e(),
             o())
         })
-    }
+    }*/
 });
 
 //Accordion

@@ -6,6 +6,12 @@
         background: $blue-active;
         padding: 16px ;
         
+        p {
+            color: $white;
+            margin: 0;
+            padding: 0;
+        }
+        
         .back-to-bga {
             color: $white;
             display: relative;
@@ -21,16 +27,19 @@
         }
     }
     .beta-badge {
-            background-color: #fff;
-            width: 80px;
-            height: 40px;
-            color: $blue-primary;
-            margin-top: 12px;
-            border-radius: 25px;
-            font-size: .9375rem;
-            font-weight: 700;
-            padding: 8px 20px 8px 20px;
-        }
+        background-color: #fff;
+        width: 80px;
+        height: 40px;
+        color: $blue-primary;
+        margin-top: 12px;
+        border-radius: 25px;
+        font-size: .9375rem;
+        font-weight: 700;
+        padding: 8px 20px 8px 20px;
+    }
+    .breadcrumb-location.inactive {
+        font-weight: 400;
+    }
     
     
     // GENERAL
@@ -68,6 +77,22 @@
     }
     .hs-code {
         padding-bottom: 16px;
+    }
+    .theme-button-primary {
+        background: #4569A0 0% 0% no-repeat padding-box;
+        border: 2px solid #254F90;
+        color: #fff;
+        font-family: "Open Sans",sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        height: 48px !important;
+        padding: 16px 32px;
+        display: inline-block;
+    }
+    .standardcta {
+        h2 {
+            padding-top: 0 !important;
+        }
     }
     
     
