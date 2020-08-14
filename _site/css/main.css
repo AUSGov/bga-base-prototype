@@ -3234,6 +3234,8 @@ label { display: block; padding: 5px 0; font-weight: bold; }
 
 .modal-background.active { width: 100%; height: 100%; display: block; background: rgba(51, 51, 51, 0.5); position: fixed; z-index: 6999; }
 
+.media-player .media-player-player { background: #AAB2C3; }
+
 #exporttool .back-to-bga-header { background: #18335C; padding: 16px; }
 
 #exporttool .back-to-bga-header p { color: #ffffff; margin: 0; padding: 0; }

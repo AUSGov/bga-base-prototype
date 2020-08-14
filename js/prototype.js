@@ -4,6 +4,9 @@
 function changePage(page){
     window.location.pathname = page;
 }
+function changePageExternal(url) {
+    window.location = url;
+}
 
 $(document).ready(function () {
     
@@ -57,15 +60,6 @@ $(document).ready(function () {
 
     /*----------- Add side-menu (sticky_list) functionality ----------- */
     
-    function create_id(text){
-        var text_no_num = text.replace(/[0-9]/g, ''),
-            text_no_punctuation = text_no_num.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?\']/g,''),
-            final_text = text_no_punctuation.trim();
-        
-        var a_lower_text = final_text.replace(/\s+/g, '-').toLowerCase();
-        return(a_lower_text);
-    }
-
     // Function for menu stickiness on scroll (called within the if .anchor-menu .sticky-container exists block)
     function add_position(positions) {
 
@@ -78,9 +72,16 @@ $(document).ready(function () {
         }
     }
     
+    // Remove whitespace from anchor-section names or they break the sidemenu links
+    $('.anchor-section').each(function(){
+        var section_name = $(this).attr('name');
+        section_name = $(this).attr('name').replace(/\s/g,' ');
+        $(this).attr('name', section_name);
+    });
     
     // Function to make the side menu sticky
     var stickyPosition = $('.anchor-menu').offset(); //This var is outside the function because it needs to be determined BEFORE window resizing,.
+    
     function menuStickiness() {
         
         var win = $(window),
@@ -114,46 +115,34 @@ $(document).ready(function () {
         });
     }
 
-    
     if ($( ".anchor-menu .sticky-container" ).length) {
-        
-        // Get text from each sticky list a-tag and convert it into an id.
-        // Replace spaces with hyphens and remove numerical characters & punctuation at the start where necessary       
-        var sticky_list_2 = {};
-        $('.anchor-menu a').each(function(){
-            var a_text = $(this).text(),
-                text_no_num = a_text.replace(/[0-9]/g, ''),
-                text_no_punctuation = text_no_num.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?\']/g,''),
-                final_text = text_no_punctuation.trim();
-        
-            var a_lower_text = final_text.replace(/\s+/g, '-').toLowerCase();
-            sticky_list_2[a_text] = a_lower_text;
-            
-        }); 
 
         // Apply menu stickiness
         menuStickiness();
-    
+
         
         // Side menu scroll to section of the page
         // and add top position of element to anchor link as a data-value
         $('.anchor-menu a').each(function(){
             
             var a_text = $(this).text(),
-                element_id = '#' + sticky_list_2[a_text],
-                element_position = $(element_id).offset();
+                element_name = $(this).text().replace(/\s/g,' ');
+                var name_str = '.anchor-section[name="' +  element_name  + '"]';
+                var element_position = $(name_str).offset();
             
             
-            if ($(element_id).length){
+            if ($(name_str).length){
                 $(this).attr('data-value', Math.round(element_position.top));
         
                 $(this).on('click', function(){
                     $([document.documentElement, document.body]).animate(
-                        { scrollTop: $(element_id).offset().top }, 400);
+                        { scrollTop: $(name_str).offset().top }, 400);
                     $('.anchor-menu a').removeClass('active-sticky');
                     $(this).addClass('active-sticky');
                 });
             }
+            
+            
         });   
         
     
