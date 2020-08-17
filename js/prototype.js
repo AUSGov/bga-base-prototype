@@ -14,7 +14,23 @@ $(document).ready(function () {
     $('.navbar-nav .nav-item.dropdown').on('click', function(){
         $(this).find('.navigation-first-level-menu').toggleClass('show');
     });
-    
+
+    $('body').click(function(e){
+        
+        console.log(e.target);
+        var top_menu_link = $('.navigation-main-menu > .nav-item').has(e.target).length > 0,
+            dropdown_menu = $('dropdown-menu').has(e.target).length > 0;
+        
+        if(!top_menu_link) {
+            console.log("I'm not the menu link");
+            
+            $('.dropdown-menu').each(function(){
+                $(this).removeClass('show');
+            });
+        } else {
+            console.log("I'm a top link");
+        }
+    });
     
     // Main nav - top level links
     $('#navbarDropdownMenuLink_0').on('click', function(e){
